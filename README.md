@@ -7,17 +7,19 @@ Api http backend (Django REST framework).
 
 1 - git clone https://github.com/Demaro/djangular-frontend-v1.git djng6
 
-2 - cd djng6 
+2 - virtualenv djng6
 
-3 - cd bin
+3 - cd djng6
 
-4 - source activate
+4 - cd bin
 
-5 - cd ..
+5 - source activate
 
-6 - cd djng_core
+6 - cd ..
 
-7 - python manage.py runserver
+7 - pip install -r requirements.txt
 
-8 - enjoy! :)
+8 - python manage.py runserver
+
+9 - enjoy! :)
 
