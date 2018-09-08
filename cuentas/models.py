@@ -14,18 +14,11 @@ from django.db.models import signals
 from django.core.mail import EmailMessage
 
 
-
 @receiver(post_save, sender=settings.AUTH_USER_MODEL)
 def create_auth_token(sender, instance=None, created=False, **kwargs):
     if created:
         Token.objects.create(user=instance)
 
-'''
-@receiver(post_save, sender=settings.AUTH_USER_MODEL)
-def create_carrito(sender, instance=None, created=False, **kwargs):
-    if created:
-        CarritoUser.objects.create(user=instance)
-'''
 
 class Contacto(models.Model):
     name = models.CharField(max_length=100)
@@ -36,7 +29,6 @@ class Contacto(models.Model):
     
     def __str__(self):
         return self.name
-
 
 
 def send_email(sender, instance, **kwargs):

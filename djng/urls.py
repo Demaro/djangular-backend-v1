@@ -31,9 +31,6 @@ urlpatterns = [
     url(r'^$',views.index, name='index'),
     # url(r'^api/$',),
     url(r'^api/usuarios/', include('cuentas.api.urls')),
-    url(r'^api/plan_mensual/', include('plan_mensual.api.urls')),
-    # url(r'^.*', TemplateView.as_view(template_name='index.html'), name='inicio'),
-    # path('api/',include('modulos.urls')),
-    #path('api/partys/',include('partys.api.urls')),
+
     
 ]

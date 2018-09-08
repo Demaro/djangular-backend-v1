@@ -68,7 +68,9 @@ class UsuarioListarSerializer(ModelSerializer):
         fields = [
             'id',
             'username',
+            'first_name',
             'email',
+
         ]
 
 class UsuarioDetalleSerializer(ModelSerializer):
@@ -103,7 +105,6 @@ class AuthTokenSerializer(serializers.Serializer):
 
 
                 username = user_get.username
-                print(username)
 
 
                 user = authenticate(request=self.context.get('request'),

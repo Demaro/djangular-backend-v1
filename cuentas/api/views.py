@@ -149,12 +149,15 @@ class ObtainAuthToken(APIView):
         print(token)
 
         context = {
+            'id': user.id,
             'token': token.key,
             'name': user.first_name,
             'email': user.email,
-            'id': user.id
+            
            
         }
+
+        print(context)
         
         return Response(context)
 
