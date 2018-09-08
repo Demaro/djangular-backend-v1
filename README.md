@@ -5,7 +5,7 @@ Api http backend (Django REST framework).
 
 # Comenzar
 
-1 - git clone https://github.com/Demaro/djangular-frontend-v1.git djng6
+1 - git clone https://github.com/Demaro/djangular-backend-v1.git djng6
 
 2 - virtualenv djng6
 
