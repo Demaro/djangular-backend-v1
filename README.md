@@ -1,4 +1,4 @@
-# Djangular - lista de cuentas - Frontend
+# Djangular - lista de cuentas - Backend with Frontend static.
 
 Este Proyecto esta desarrollado con Angular 6. 
 Api http backend (Django REST framework).
@@ -9,13 +9,15 @@ Api http backend (Django REST framework).
 
 2 - cd djng6 
 
-3 - npm install 
+3 - cd bin
 
-4 - ng serve
+4 - source activate
 
-5 - ingrese sesion como usuario.
+5 - cd ..
 
-6 - filtre tabla dinamica por nombre de la cuenta.
+6 - cd djng_core
 
-7 - enjoy! :)
+7 - python manage.py runserver
+
+8 - enjoy! :)
 
